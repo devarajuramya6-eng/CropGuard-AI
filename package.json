@@ -1,0 +1,14 @@
+{
+  "name": "agriguard-ai-monorepo",
+  "version": "1.0.0",
+  "description": "AgriGuard AI Platform",
+  "private": true,
+  "scripts": {
+    "metrics": "node scripts/project-metrics/metrics.js",
+    "license-check": "node scripts/license-check/check.js"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
