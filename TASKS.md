@@ -50,6 +50,10 @@ This document contains a granular list of actionable tasks.
 - [x] Connect Frontend to Quality Result (Simulated response logic)
 
 ## Phase 9: Disease AI
-- [ ] Create AI Inference Service (Disease Classification)
-- [ ] Implement Confidence & Severity Scoring
-- [ ] Create Database Models for Predictions
+- [x] Create AI Inference Service (Disease Classification)
+- [x] Implement Confidence & Severity Scoring
+- [x] Create Database Models for Predictions
+
+## Phase 10: Disease Knowledge Base
+- [ ] Create Database schema for Diseases & Symptoms
+- [ ] Implement Knowledge Base API for retrieval

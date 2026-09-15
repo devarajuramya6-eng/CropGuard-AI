@@ -69,10 +69,31 @@ def upload_crop_image(
             "status": "rejected",
             "message": quality["rejection_reason"]
         }
+        
+    # PHASE 9: Disease AI Inference
+    from services.ai_inference_service import inference_service
+    from models.prediction import DiseasePrediction
+    
+    # Run the model prediction
+    prediction_result = inference_service.predict(file_path)
+    
+    # Save the prediction result
+    db_prediction = DiseasePrediction(
+        image_id=img_record.id,
+        predicted_disease=prediction_result["predicted_disease"],
+        confidence_score=prediction_result["confidence_score"],
+        severity=prediction_result["severity"],
+        explanation=prediction_result["explanation"],
+        limitations=prediction_result["limitations"],
+        needs_expert_review=prediction_result["needs_expert_review"]
+    )
+    db.add(db_prediction)
+    db.commit()
     
     return {
         "id": img_record.id,
         "url": storage.get_file_url(file_path),
-        "status": "accepted",
-        "message": "Image quality is good. Ready for AI disease analysis."
+        "status": "success",
+        "message": "Image analyzed successfully.",
+        "prediction": prediction_result
     }
