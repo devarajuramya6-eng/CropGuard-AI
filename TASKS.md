@@ -123,5 +123,9 @@ This document contains a granular list of actionable tasks.
 - [x] Create Worker Invitation APIs
 
 ## Phase 27: Webhooks / Integrations
-- [ ] Implement external webhook registry
-- [ ] Connect critical alerts to external targets
+- [x] Implement external webhook registry
+- [x] Connect critical alerts to external targets
+
+## Phase 28: Next.js Final Styling
+- [ ] Install Tailwind components (shadcn/ui or similar abstraction)
+- [ ] Style the layout cleanly
