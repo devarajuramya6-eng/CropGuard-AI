@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from api.api_v1.endpoints import auth, farms, fields, crops, images, diseases, weather, risk, alerts, assistant, voice
+from api.api_v1.endpoints import auth, farms, fields, crops, images, diseases, weather, risk, alerts, assistant, voice, profile
 
 api_router = APIRouter()
 api_router.include_router(auth.router, prefix="/auth", tags=["auth"])
@@ -13,3 +13,4 @@ api_router.include_router(risk.router, prefix="/risk", tags=["risk"])
 api_router.include_router(alerts.router, prefix="/alerts", tags=["alerts"])
 api_router.include_router(assistant.router, prefix="/assistant", tags=["assistant"])
 api_router.include_router(voice.router, prefix="/voice", tags=["voice"])
+api_router.include_router(profile.router, prefix="/profile", tags=["profile"])

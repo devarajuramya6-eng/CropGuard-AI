@@ -83,5 +83,9 @@ This document contains a granular list of actionable tasks.
 - [x] Connect Voice inputs to Assistant Engine
 
 ## Phase 17: User Profile
-- [ ] Create Profile DB schema (Language prefs, location)
-- [ ] Implement Profile API
+- [x] Create Profile DB schema (Language prefs, location)
+- [x] Implement Profile API
+
+## Phase 18: Activity Logging
+- [ ] Create Audit Log schema
+- [ ] Implement Logging Middleware for security
