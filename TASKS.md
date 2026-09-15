@@ -115,5 +115,9 @@ This document contains a granular list of actionable tasks.
 - [x] Connect Alerts to WS for live push
 
 ## Phase 25: Report Generation
-- [ ] Implement PDF generator utility
-- [ ] Create Report Endpoint (Farm Summary)
+- [x] Implement PDF generator utility (HTML abstract)
+- [x] Create Report Endpoint (Farm Summary)
+
+## Phase 26: Sub-user Roles
+- [ ] Implement RBAC (Admin, Owner, Worker)
+- [ ] Create Worker Invitation APIs
