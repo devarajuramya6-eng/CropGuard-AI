@@ -41,6 +41,10 @@ This document contains a granular list of actionable tasks.
 - [x] Build Crop API and UI integration
 
 ## Phase 7: Image Upload
-- [ ] Create Storage Provider Abstraction
-- [ ] Implement Image Upload API Endpoints
-- [ ] Create Frontend UI for Image Uploads
+- [x] Create Storage Provider Abstraction
+- [x] Implement Image Upload API Endpoints
+- [x] Create Frontend UI for Image Uploads
+
+## Phase 8: Image Quality
+- [ ] Create Image Quality Validation API Pipeline
+- [ ] Connect Frontend to Quality Result
