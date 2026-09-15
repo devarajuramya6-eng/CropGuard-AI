@@ -11,13 +11,13 @@ This document contains a granular list of actionable tasks.
 - [x] Create ROADMAP.md and TEAM_SPLIT.md
 - [x] Create initial license check script
 - [x] Create initial metrics script
-- [ ] Initialize Python environment (Backend)
+- [x] Initialize Python environment (Backend)
 - [ ] Initialize Node environment (Frontend)
 - [ ] Set up pre-commit hooks
 
 ## Phase 2: Authentication
-- [ ] Design Auth schema
-- [ ] Implement JWT backend strategy
+- [x] Design Auth schema (SQLAlchemy + Pydantic)
+- [x] Implement JWT backend strategy and API endpoints
 - [ ] Create frontend login/register forms
 
 *(List will be expanded dynamically)*
