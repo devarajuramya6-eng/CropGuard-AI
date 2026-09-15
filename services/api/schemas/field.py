@@ -26,3 +26,11 @@ class FieldResponse(FieldBase):
 
     class Config:
         from_attributes = True
+
+# Schema for Health Timeline History
+class FieldHistoryResponse(BaseModel):
+    date: str
+    event_type: str
+    description: str
+    severity: Optional[str] = None
+    image_url: Optional[str] = None

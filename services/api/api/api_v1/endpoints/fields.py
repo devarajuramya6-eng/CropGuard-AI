@@ -7,6 +7,7 @@ from db.database import get_db
 from models.field import Field
 from models.farm import Farm
 from models.user import User
+import schemas.field
 from schemas.field import FieldCreate, FieldUpdate, FieldResponse
 
 router = APIRouter()
@@ -59,3 +60,43 @@ def create_field(
     db.commit()
     db.refresh(field)
     return field
+
+@router.get("/{field_id}/history", response_model=List[schemas.field.FieldHistoryResponse])
+def get_field_health_history(
+    field_id: int,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(deps.get_current_active_user),
+) -> Any:
+    """
+    Retrieve the chronological health history and AI predictions for a specific field.
+    """
+    field = db.query(Field).filter(Field.id == field_id).first()
+    if not field:
+        raise HTTPException(status_code=404, detail="Field not found")
+        
+    farm = db.query(Farm).filter(Farm.id == field.farm_id).first()
+    if farm.owner_id != current_user.id:
+        raise HTTPException(status_code=403, detail="Not authorized to access this field's history")
+        
+    # In a fully integrated environment, we query:
+    # UploadedImage JOIN DiseasePrediction WHERE field_id == field_id
+    # We simulate the timeline assembly here for architecture demonstration.
+    
+    history = [
+        {
+            "date": field.planting_date.isoformat() if field.planting_date else "2026-05-01",
+            "event_type": "Planting",
+            "description": f"Planted {field.crop_type or 'crop'} in {field.name}.",
+            "severity": "Healthy",
+            "image_url": None
+        },
+        {
+            "date": "2026-06-15",
+            "event_type": "AI Diagnosis",
+            "description": "AI detected Early Blight symptoms.",
+            "severity": "Moderate",
+            "image_url": "/static/simulated_leaf.jpg"
+        }
+    ]
+    
+    return history

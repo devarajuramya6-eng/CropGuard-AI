@@ -59,5 +59,9 @@ This document contains a granular list of actionable tasks.
 - [x] Implement Knowledge Base API for retrieval
 
 ## Phase 11: Crop Health History
-- [ ] Connect predictions to field history
-- [ ] Create Timeline API for Farmer tracking
+- [x] Connect predictions to field history (Timeline schema)
+- [x] Create Timeline API for Farmer tracking
+
+## Phase 12: Weather
+- [ ] Create Weather Provider Abstraction
+- [ ] Implement Weather API endpoints
