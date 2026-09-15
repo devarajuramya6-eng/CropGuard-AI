@@ -75,5 +75,9 @@ This document contains a granular list of actionable tasks.
 - [x] Implement Alert Generation Logic and APIs
 
 ## Phase 15: AI Agriculture Assistant
-- [ ] Create Context-aware Assistant Core
-- [ ] Implement Chat API Endpoints
+- [x] Create Context-aware Assistant Core
+- [x] Implement Chat API Endpoints
+
+## Phase 16: Voice Assistant
+- [ ] Implement Speech-to-Text abstraction
+- [ ] Connect Voice inputs to Assistant Engine
