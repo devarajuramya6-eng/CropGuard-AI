@@ -95,5 +95,9 @@ This document contains a granular list of actionable tasks.
 - [x] Implement Sync conflict resolution API
 
 ## Phase 20: Farm Statistics
-- [ ] Create Data Aggregation Service
-- [ ] Implement Analytics API (Yield, Disease Rates)
+- [x] Create Data Aggregation Service
+- [x] Implement Analytics API (Yield, Disease Rates)
+
+## Phase 21: Task Management
+- [ ] Create Task SQL models (Irrigation, Spraying)
+- [ ] Implement Task CRUD APIs
