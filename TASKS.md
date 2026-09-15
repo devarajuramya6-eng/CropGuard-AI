@@ -103,5 +103,9 @@ This document contains a granular list of actionable tasks.
 - [x] Implement Task CRUD APIs
 
 ## Phase 22: Equipment Inventory
-- [ ] Create Inventory DB schema (Tools, Chemicals)
-- [ ] Implement Equipment tracking API
+- [x] Create Inventory DB schema (Tools, Chemicals)
+- [x] Implement Equipment tracking API
+
+## Phase 23: Sensor IoT Base
+- [ ] Create Soil Sensor data models
+- [ ] Implement IoT ingestion endpoints
