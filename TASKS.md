@@ -37,5 +37,10 @@ This document contains a granular list of actionable tasks.
 - [x] Implement Frontend Field Management UI
 
 ## Phase 6: Crop Management
-- [ ] Create Crop Catalog models (Types, Diseases, Growth Stages)
-- [ ] Build Crop API and UI integration
+- [x] Create Crop Catalog models (Types, Diseases, Growth Stages)
+- [x] Build Crop API and UI integration
+
+## Phase 7: Image Upload
+- [ ] Create Storage Provider Abstraction
+- [ ] Implement Image Upload API Endpoints
+- [ ] Create Frontend UI for Image Uploads
