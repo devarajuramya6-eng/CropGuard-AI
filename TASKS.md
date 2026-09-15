@@ -55,5 +55,9 @@ This document contains a granular list of actionable tasks.
 - [x] Create Database Models for Predictions
 
 ## Phase 10: Disease Knowledge Base
-- [ ] Create Database schema for Diseases & Symptoms
-- [ ] Implement Knowledge Base API for retrieval
+- [x] Create Database schema for Diseases & Symptoms
+- [x] Implement Knowledge Base API for retrieval
+
+## Phase 11: Crop Health History
+- [ ] Connect predictions to field history
+- [ ] Create Timeline API for Farmer tracking
