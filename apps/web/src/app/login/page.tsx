@@ -1,16 +1,41 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
-
+import { useAuth } from '../../context/AuthContext';
 export default function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
+  const { login } = useAuth();
+
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Connect to FastAPI backend /api/v1/auth/login/access-token
-    setError("Backend integration pending in next phase.");
+    setError("");
+    
+    try {
+      const formData = new URLSearchParams();
+      formData.append("username", email);
+      formData.append("password", password);
+      
+      const response = await fetch("http://localhost:8000/api/v1/auth/login/access-token", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: formData
+      });
+      
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || "Login failed");
+      }
+      
+      const data = await response.json();
+      login(data.access_token);
+    } catch (err: any) {
+      setError(err.message);
+    }
   };
 
   return (

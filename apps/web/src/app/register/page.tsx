@@ -10,10 +10,33 @@ export default function RegisterPage() {
 
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Connect to FastAPI backend /api/v1/auth/register
-    setError("Backend integration pending in next phase.");
+    setError("");
+    
+    try {
+      const response = await fetch("http://localhost:8000/api/v1/auth/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          email,
+          password,
+          full_name: name,
+          role: "farmer"
+        })
+      });
+      
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || "Registration failed");
+      }
+      
+      // Auto-redirect to login after successful registration
+      window.location.href = "/login";
+    } catch (err: any) {
+      setError(err.message);
+    }
   };
-
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
       <div className="max-w-md w-full bg-white p-8 rounded-xl shadow-lg border border-gray-100">

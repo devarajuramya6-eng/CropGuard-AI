@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, Float, DateTime, func
+from sqlalchemy import Column, Integer, String, Float, ForeignKey, DateTime, func, JSON, Boolean
 from db.database import Base
 
 class DiseasePrediction(Base):

@@ -4,6 +4,7 @@ from typing import Optional
 class Settings(BaseSettings):
     PROJECT_NAME: str = "AgriGuard AI API"
     API_V1_STR: str = "/api/v1"
+    BACKEND_CORS_ORIGINS: list[str] = ["http://localhost:3000", "http://localhost:8000"]
     
     # SECURITY
     SECRET_KEY: str = "supersecretkey-change-in-production"
@@ -23,6 +24,6 @@ class Settings(BaseSettings):
     def database_url(self) -> str:
         if self.SQLALCHEMY_DATABASE_URI:
             return self.SQLALCHEMY_DATABASE_URI
-        return f"postgresql://{self.POSTGRES_USER}:{self.POSTGRES_PASSWORD}@{self.POSTGRES_SERVER}/{self.POSTGRES_DB}"
+        return "sqlite:///./agriguard.db"
 
 settings = Settings()
