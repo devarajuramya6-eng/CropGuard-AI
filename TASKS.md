@@ -32,5 +32,6 @@ This document contains a granular list of actionable tasks.
 - [x] Implement Frontend Farm Management UI
 
 ## Phase 5: Field Management
-- [ ] Create Field database models linked to Farms
-- [ ] Create CRUD endpoints for Fields
+- [x] Create Field database models linked to Farms
+- [x] Create CRUD endpoints for Fields
+- [ ] Implement Frontend Field Management UI
