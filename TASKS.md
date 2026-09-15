@@ -71,5 +71,9 @@ This document contains a granular list of actionable tasks.
 - [x] Implement Risk APIs
 
 ## Phase 14: Smart Alerts
-- [ ] Create Notification Preferences Schema
-- [ ] Implement Alert Generation Logic
+- [x] Create Notification Preferences Schema
+- [x] Implement Alert Generation Logic and APIs
+
+## Phase 15: AI Agriculture Assistant
+- [ ] Create Context-aware Assistant Core
+- [ ] Implement Chat API Endpoints
