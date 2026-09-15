@@ -27,5 +27,6 @@ This document contains a granular list of actionable tasks.
 - [x] Connect dashboard to authentication state (API Client)
 
 ## Phase 4: Farm Management
-- [ ] Create Farm and Field database models
-- [ ] Create CRUD endpoints for Farms
+- [x] Create Farm and Field database models
+- [x] Create CRUD endpoints for Farms (with Tenant Isolation)
+- [ ] Implement Frontend Farm Management UI
