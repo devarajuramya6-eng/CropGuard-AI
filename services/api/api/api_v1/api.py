@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from api.api_v1.endpoints import auth, farms, fields, crops, images, diseases, weather, risk, alerts, assistant, voice, profile, sync, statistics, tasks, inventory, sensors
+from api.api_v1.endpoints import auth, farms, fields, crops, images, diseases, weather, risk, alerts, assistant, voice, profile, sync, statistics, tasks, inventory, sensors, ws
 
 api_router = APIRouter()
 api_router.include_router(auth.router, prefix="/auth", tags=["auth"])
@@ -19,3 +19,4 @@ api_router.include_router(statistics.router, prefix="/statistics", tags=["statis
 api_router.include_router(tasks.router, prefix="/tasks", tags=["tasks"])
 api_router.include_router(inventory.router, prefix="/inventory", tags=["inventory"])
 api_router.include_router(sensors.router, prefix="/sensors", tags=["iot-sensors"])
+api_router.include_router(ws.router, prefix="/ws", tags=["websockets"])

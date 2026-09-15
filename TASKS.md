@@ -111,5 +111,9 @@ This document contains a granular list of actionable tasks.
 - [x] Implement IoT ingestion endpoints
 
 ## Phase 24: Real-time Comms (WebSockets)
-- [ ] Create WebSocket Manager
-- [ ] Connect Alerts to WS for live push
+- [x] Create WebSocket Manager
+- [x] Connect Alerts to WS for live push
+
+## Phase 25: Report Generation
+- [ ] Implement PDF generator utility
+- [ ] Create Report Endpoint (Farm Summary)
