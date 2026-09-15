@@ -119,5 +119,9 @@ This document contains a granular list of actionable tasks.
 - [x] Create Report Endpoint (Farm Summary)
 
 ## Phase 26: Sub-user Roles
-- [ ] Implement RBAC (Admin, Owner, Worker)
-- [ ] Create Worker Invitation APIs
+- [x] Implement RBAC (Admin, Owner, Worker)
+- [x] Create Worker Invitation APIs
+
+## Phase 27: Webhooks / Integrations
+- [ ] Implement external webhook registry
+- [ ] Connect critical alerts to external targets
