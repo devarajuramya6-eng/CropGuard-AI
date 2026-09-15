@@ -34,4 +34,8 @@ This document contains a granular list of actionable tasks.
 ## Phase 5: Field Management
 - [x] Create Field database models linked to Farms
 - [x] Create CRUD endpoints for Fields
-- [ ] Implement Frontend Field Management UI
+- [x] Implement Frontend Field Management UI
+
+## Phase 6: Crop Management
+- [ ] Create Crop Catalog models (Types, Diseases, Growth Stages)
+- [ ] Build Crop API and UI integration
