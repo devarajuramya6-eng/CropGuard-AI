@@ -127,5 +127,5 @@ This document contains a granular list of actionable tasks.
 - [x] Connect critical alerts to external targets
 
 ## Phase 28: Next.js Final Styling
-- [ ] Install Tailwind components (shadcn/ui or similar abstraction)
-- [ ] Style the layout cleanly
+- [x] Install Tailwind components (shadcn/ui or similar abstraction)
+- [x] Style the layout cleanly
