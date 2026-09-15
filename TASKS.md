@@ -99,5 +99,9 @@ This document contains a granular list of actionable tasks.
 - [x] Implement Analytics API (Yield, Disease Rates)
 
 ## Phase 21: Task Management
-- [ ] Create Task SQL models (Irrigation, Spraying)
-- [ ] Implement Task CRUD APIs
+- [x] Create Task SQL models (Irrigation, Spraying)
+- [x] Implement Task CRUD APIs
+
+## Phase 22: Equipment Inventory
+- [ ] Create Inventory DB schema (Tools, Chemicals)
+- [ ] Implement Equipment tracking API
