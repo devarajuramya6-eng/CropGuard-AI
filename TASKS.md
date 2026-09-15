@@ -67,5 +67,9 @@ This document contains a granular list of actionable tasks.
 - [x] Implement Weather API endpoints
 
 ## Phase 13: Risk Analysis
-- [ ] Create Risk Assessment Engine (Combining AI + Weather)
-- [ ] Implement Risk APIs
+- [x] Create Risk Assessment Engine (Combining AI + Weather)
+- [x] Implement Risk APIs
+
+## Phase 14: Smart Alerts
+- [ ] Create Notification Preferences Schema
+- [ ] Implement Alert Generation Logic
