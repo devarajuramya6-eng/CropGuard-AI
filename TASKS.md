@@ -20,4 +20,8 @@ This document contains a granular list of actionable tasks.
 - [x] Implement JWT backend strategy and API endpoints
 - [x] Create frontend login/register forms
 
-*(List will be expanded dynamically)*
+## Phase 3: Farmer Application
+- [x] Build core Dashboard Layout (Sidebar, Header)
+- [x] Build Farm Overview and AI summary page
+- [ ] Implement UI state management
+- [ ] Connect dashboard to authentication state
