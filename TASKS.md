@@ -23,5 +23,9 @@ This document contains a granular list of actionable tasks.
 ## Phase 3: Farmer Application
 - [x] Build core Dashboard Layout (Sidebar, Header)
 - [x] Build Farm Overview and AI summary page
-- [ ] Implement UI state management
-- [ ] Connect dashboard to authentication state
+- [x] Implement UI state management (AuthContext)
+- [x] Connect dashboard to authentication state (API Client)
+
+## Phase 4: Farm Management
+- [ ] Create Farm and Field database models
+- [ ] Create CRUD endpoints for Farms
