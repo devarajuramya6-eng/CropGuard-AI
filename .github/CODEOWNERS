@@ -1,0 +1,10 @@
+# Frontend ownership
+/apps/web/ @ramya
+
+# Backend ownership
+/services/api/ @lavanya
+
+# Database ownership
+/services/api/agriguard.db @kalyani
+*.db @kalyani
+*.sql @kalyani
