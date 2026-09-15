@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from api.api_v1.endpoints import auth, farms, fields, crops, images, diseases
+from api.api_v1.endpoints import auth, farms, fields, crops, images, diseases, weather
 
 api_router = APIRouter()
 api_router.include_router(auth.router, prefix="/auth", tags=["auth"])
@@ -8,3 +8,4 @@ api_router.include_router(fields.router, prefix="/fields", tags=["fields"])
 api_router.include_router(crops.router, prefix="/crops", tags=["crops"])
 api_router.include_router(images.router, prefix="/images", tags=["images"])
 api_router.include_router(diseases.router, prefix="/diseases", tags=["knowledge-base"])
+api_router.include_router(weather.router, prefix="/weather", tags=["weather"])

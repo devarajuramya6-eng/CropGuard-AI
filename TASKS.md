@@ -63,5 +63,9 @@ This document contains a granular list of actionable tasks.
 - [x] Create Timeline API for Farmer tracking
 
 ## Phase 12: Weather
-- [ ] Create Weather Provider Abstraction
-- [ ] Implement Weather API endpoints
+- [x] Create Weather Provider Abstraction
+- [x] Implement Weather API endpoints
+
+## Phase 13: Risk Analysis
+- [ ] Create Risk Assessment Engine (Combining AI + Weather)
+- [ ] Implement Risk APIs
