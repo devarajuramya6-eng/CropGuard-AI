@@ -91,5 +91,9 @@ This document contains a granular list of actionable tasks.
 - [x] Implement Logging Middleware for security
 
 ## Phase 19: Offline Sync
-- [ ] Create Sync Queue models (Mobile app support)
-- [ ] Implement Sync conflict resolution API
+- [x] Create Sync Queue models (Mobile app support)
+- [x] Implement Sync conflict resolution API
+
+## Phase 20: Farm Statistics
+- [ ] Create Data Aggregation Service
+- [ ] Implement Analytics API (Yield, Disease Rates)
