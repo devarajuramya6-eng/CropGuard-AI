@@ -29,4 +29,8 @@ This document contains a granular list of actionable tasks.
 ## Phase 4: Farm Management
 - [x] Create Farm and Field database models
 - [x] Create CRUD endpoints for Farms (with Tenant Isolation)
-- [ ] Implement Frontend Farm Management UI
+- [x] Implement Frontend Farm Management UI
+
+## Phase 5: Field Management
+- [ ] Create Field database models linked to Farms
+- [ ] Create CRUD endpoints for Fields
