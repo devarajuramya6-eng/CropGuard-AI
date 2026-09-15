@@ -46,5 +46,10 @@ This document contains a granular list of actionable tasks.
 - [x] Create Frontend UI for Image Uploads
 
 ## Phase 8: Image Quality
-- [ ] Create Image Quality Validation API Pipeline
-- [ ] Connect Frontend to Quality Result
+- [x] Create Image Quality Validation API Pipeline
+- [x] Connect Frontend to Quality Result (Simulated response logic)
+
+## Phase 9: Disease AI
+- [ ] Create AI Inference Service (Disease Classification)
+- [ ] Implement Confidence & Severity Scoring
+- [ ] Create Database Models for Predictions

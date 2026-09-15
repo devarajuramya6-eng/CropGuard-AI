@@ -44,8 +44,35 @@ def upload_crop_image(
     db.commit()
     db.refresh(img_record)
     
+    # PHASE 8: Image Quality Check
+    from services.image_quality_service import quality_service
+    from models.image_quality import ImageQualityResult
+    
+    quality = quality_service.analyze_quality(file_path)
+    
+    quality_record = ImageQualityResult(
+        image_id=img_record.id,
+        is_acceptable=quality["is_acceptable"],
+        blur_score=quality["blur_score"],
+        brightness_score=quality["brightness_score"],
+        resolution_ok=quality["resolution_ok"],
+        rejection_reason=quality["rejection_reason"]
+    )
+    db.add(quality_record)
+    db.commit()
+    
+    if not quality["is_acceptable"]:
+        # We don't throw HTTP error, we return 200 with the rejection to the UI
+        return {
+            "id": img_record.id,
+            "url": storage.get_file_url(file_path),
+            "status": "rejected",
+            "message": quality["rejection_reason"]
+        }
+    
     return {
         "id": img_record.id,
         "url": storage.get_file_url(file_path),
-        "message": "Image uploaded successfully. Awaiting quality validation and AI analysis."
+        "status": "accepted",
+        "message": "Image quality is good. Ready for AI disease analysis."
     }
