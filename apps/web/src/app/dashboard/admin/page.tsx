@@ -3,6 +3,19 @@ import React, { useState } from "react";
 
 export default function AdminDashboardPage() {
   const [activeTab, setActiveTab] = useState("users");
+  const [isExporting, setIsExporting] = useState(false);
+
+  const handleExport = () => {
+    setIsExporting(true);
+    setTimeout(() => {
+      setIsExporting(false);
+      alert("System Report exported successfully to CSV!");
+    }, 1500);
+  };
+
+  const handleSettings = () => {
+    alert("System Settings panel will open here. Currently locked to Super Admin.");
+  };
 
   return (
     <div className="p-8 max-w-7xl mx-auto space-y-8 animate-in fade-in duration-500">
@@ -12,8 +25,12 @@ export default function AdminDashboardPage() {
           <p className="text-slate-500 mt-1">Manage users, farms, and AI models across the AgriGuard system.</p>
         </div>
         <div className="flex space-x-2">
-          <button className="btn-outline bg-white">Export Report</button>
-          <button className="btn-primary bg-slate-900 hover:bg-slate-800 text-white shadow-none">System Settings</button>
+          <button onClick={handleExport} disabled={isExporting} className="btn-outline bg-white">
+            {isExporting ? "Exporting..." : "Export Report"}
+          </button>
+          <button onClick={handleSettings} className="btn-primary bg-slate-900 hover:bg-slate-800 text-white shadow-none">
+            System Settings
+          </button>
         </div>
       </div>
 

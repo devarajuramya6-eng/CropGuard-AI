@@ -4,6 +4,8 @@
   "description": "AgriGuard AI Platform",
   "private": true,
   "scripts": {
+    "start": "npm run start --workspace=apps/web",
+    "build": "npm run build --workspace=apps/web",
     "metrics": "node scripts/project-metrics/metrics.js",
     "license-check": "node scripts/license-check/check.js"
   },

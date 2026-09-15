@@ -30,12 +30,13 @@ export default function TopNavbar() {
           </div>
         </Link>
         
-        <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+        <div className="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
           <Link href="/" className={`${isActive('/') ? 'text-[#0D5C35] border-b-2 border-[#0D5C35]' : 'hover:text-[#0D5C35]'} pb-1`}>Home</Link>
           <Link href="/dashboard" className={`${pathname === '/dashboard' ? 'text-[#0D5C35] border-b-2 border-[#0D5C35]' : 'hover:text-[#0D5C35]'} pb-1`}>Dashboard</Link>
           <Link href="/dashboard/scan" className={`${isActive('/dashboard/scan') ? 'text-[#0D5C35] border-b-2 border-[#0D5C35]' : 'hover:text-[#0D5C35]'} pb-1`}>Scan</Link>
           <Link href="/dashboard/insights" className={`${isActive('/dashboard/insights') ? 'text-[#0D5C35] border-b-2 border-[#0D5C35]' : 'hover:text-[#0D5C35]'} pb-1`}>Insights</Link>
-          <Link href="/dashboard/expert" className={`${isActive('/dashboard/expert') ? 'text-[#0D5C35] border-b-2 border-[#0D5C35]' : 'hover:text-[#0D5C35]'} pb-1`}>Expert Portal</Link>
+          <Link href="/dashboard/yield" className={`${isActive('/dashboard/yield') ? 'text-[#0D5C35] border-b-2 border-[#0D5C35]' : 'hover:text-[#0D5C35]'} pb-1`}>Yield AI</Link>
+          <Link href="/dashboard/expert" className={`${isActive('/dashboard/expert') ? 'text-[#0D5C35] border-b-2 border-[#0D5C35]' : 'hover:text-[#0D5C35]'} pb-1`}>Expert</Link>
           <Link href="/dashboard/admin" className={`${isActive('/dashboard/admin') ? 'text-[#0D5C35] border-b-2 border-[#0D5C35]' : 'hover:text-[#0D5C35]'} pb-1`}>Admin</Link>
         </div>
 
