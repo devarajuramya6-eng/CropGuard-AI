@@ -79,5 +79,9 @@ This document contains a granular list of actionable tasks.
 - [x] Implement Chat API Endpoints
 
 ## Phase 16: Voice Assistant
-- [ ] Implement Speech-to-Text abstraction
-- [ ] Connect Voice inputs to Assistant Engine
+- [x] Implement Speech-to-Text abstraction (Multi-language)
+- [x] Connect Voice inputs to Assistant Engine
+
+## Phase 17: User Profile
+- [ ] Create Profile DB schema (Language prefs, location)
+- [ ] Implement Profile API
