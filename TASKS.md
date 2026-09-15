@@ -107,5 +107,9 @@ This document contains a granular list of actionable tasks.
 - [x] Implement Equipment tracking API
 
 ## Phase 23: Sensor IoT Base
-- [ ] Create Soil Sensor data models
-- [ ] Implement IoT ingestion endpoints
+- [x] Create Soil Sensor data models
+- [x] Implement IoT ingestion endpoints
+
+## Phase 24: Real-time Comms (WebSockets)
+- [ ] Create WebSocket Manager
+- [ ] Connect Alerts to WS for live push
