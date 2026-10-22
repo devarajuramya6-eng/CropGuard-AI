@@ -2,10 +2,11 @@
   "name": "agriguard-ai-monorepo",
   "version": "1.0.0",
   "description": "AgriGuard AI Platform",
-  "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "start": "npm run start --workspace=apps/web",
     "build": "npm run build --workspace=apps/web",
+    "test": "pytest tests/",
     "metrics": "node scripts/project-metrics/metrics.js",
     "license-check": "node scripts/license-check/check.js"
   },

@@ -13,8 +13,6 @@ env/
 .env.local
 .env.*.local
 .pytest_cache/
-.coverage
-coverage.xml
 htmlcov/
 *.log
 
